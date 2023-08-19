@@ -1,0 +1,50 @@
+.youtubeCard{
+    width: 300px;
+    transition: all 0.5s;
+    padding: 1vmax;
+    margin: 2vmax;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.youtubeCard > a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.712);
+    width: inherit;
+}
+
+.youtubeCard img{
+    width: inherit;
+}
+
+.youtubeCard:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.329);
+}
+
+.youtubeCard:hover .deleteButton{
+    visibility: visible !important;
+}
+
+.deleteButton{
+    margin: auto !important;
+    display: block !important;
+    color: rgba(0,0,0,0.1) !important;
+    visibility: hidden !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    width: 100% !important;
+}
+
+.deleteButton:hover{
+    background-color: transparent !important;
+    color: red !important;
+}
+
+@media screen and (max-width: 600px) {
+    .youtubeCard{
+        width: 200px;
+    }
+}

@@ -1,0 +1,147 @@
+.adminTimeLinePanel{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(219, 48%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminTimeLinePanelContainer{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.adminTimeLinePanelContainer > h4{
+    margin: 2vmax;
+    letter-spacing: 15px;
+    display: flex;
+    transform: translateX(-100vw);
+    animation: contactFormInputs 1s ease-in-out forwards;
+    justify-content: center;
+}
+
+.adminTimeLinePanelContainer > h4 > p{
+    transition: all 0.5s;
+}
+
+.adminTimeLinePanelContainer > h4 > p:hover{
+     transform: translateY(-10px);
+}
+
+.adminTimeLinePanelContainer > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vmax;
+    padding-top: 0;
+}
+
+.adminTimeLinePanelInputs{
+    width: 50%;
+    padding: 1vmax 2vmax;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font: 600 1rem "Roboto", sans-serif;
+    outline: none;
+    margin: 2vmax;
+    box-sizing: border-box;
+}
+
+.adminTimeLinePanelSkills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adminTimeLinePanelSkills > div{
+    display: flex;
+    align-items: center;
+    margin: 2vmax;
+}
+
+.adminTimeLinePanelSkills > div > p{
+    font: 400 1.5rem "Roboto", sans-serif;
+    margin-right: 2vmax;
+    color: rgba(24,24,24,0.815);
+}
+
+.adminTimeLinePanelFileUpload::-webkit-file-upload-button{
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: hsl(255, 100%, 75%);
+    padding: 1vmax;
+    color: white;
+    transition: all 0.5s;
+}
+
+.adminTimeLinePanelFileUpload::-webkit-file-upload-button:hover{
+    background-color: transparent;
+    color: hsl(255, 100%, 75%);
+}
+
+.adminTimeLinePanelAbout{
+    width: 100%;
+}
+
+.adminTimeLinePanelAbout > fieldset > legend{
+    margin: 2vmax;
+    font: 400 2rem "Roboto";
+}
+
+.adminTimeLinePanelAbout > fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    margin: 2vmax 0;
+    padding-bottom: 3vmax;
+}
+
+.adminTimeLinePanelContainer > form > a{
+    background-color: white;
+    padding: 0.5vmax;
+    font: 400 1rem "Roboto", sans-serif;
+    color: rgb(44,44,44);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100px;
+    margin: 1vmax;
+    transition: all 0.5s;
+    border: 1px solid black;
+}
+
+.adminTimeLinePanelContainer > form > a:hover{
+    background-color: hsl(255, 100%, 75%);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.212);
+    transform: scale(1.1);
+}
+
+.adminTimeLinePanelContainer > form > button{
+    width: 50%;
+    padding: 1vmax;
+    margin: 2vmax;
+    background-color: transparent;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    .adminTimeLinePanelContainer > h4{
+        margin-top: 75px;
+    }
+    .adminTimeLinePanelContainer > form{
+        margin-top: 75px;
+    }
+    .adminTimeLinePanelInputs{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
